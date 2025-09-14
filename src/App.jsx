@@ -4,7 +4,7 @@ import KEFApp from './KEFApp'
 const App = () => {
   return (
     <div>
-      <KEFApp/>
+      <KEFApp />
     </div>
   )
 }
