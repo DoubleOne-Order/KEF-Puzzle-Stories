@@ -84,64 +84,64 @@ const KEFApp = () => {
     "volunteer@kef.org": { name: "Community Volunteer", password: "volunteer123" },
   });
 
-const studentStories = [
-  {
-    name: "Grace Wanjiku",
-    image:
-      "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=800&h=800&fit=crop&crop=faces&auto=format&q=60",
-    story:
-      "Growing up in a small village in Central Kenya, Grace longed to study medicine but her family could not afford school fees. KEF provided her with a scholarship, mentorship, and hope. She excelled academically, graduated top of her class, and is now pursuing medicine with the dream of serving rural communities.",
-    achievement: "Medical Student",
-    location: "Central Kenya",
-    bgColor: [KEF_COLORS.hope, KEF_COLORS.primary],
-  },
-  {
-    name: "David Kimani",
-    image: male1,
-    story:
-      "After losing both parents at a young age, David believed his dream of finishing school had ended. KEF stepped in with scholarship aid, mentorship, and emotional support. He not only completed high school but went on to university, and today works as a community officer empowering vulnerable families in Nairobi.",
-    achievement: "Community Development Officer",
-    location: "Nairobi County",
-    bgColor: [KEF_COLORS.primary, KEF_COLORS.warmth],
-  },
-  {
-    name: "Mary Chepkemoi",
-    image: female2,
-    story:
-      "As the daughter of a pastoralist family, Mary faced immense cultural pressure to abandon school. KEF offered her the chance to pursue education with dignity. Through resilience and mentorship, she graduated in engineering and now designs water systems in drought-prone regions, improving lives and inspiring young girls from her community.",
-    achievement: "Water Systems Engineer",
-    location: "Rift Valley",
-    bgColor: [KEF_COLORS.sunshine, KEF_COLORS.hope],
-  },
-  {
-    name: "Joseph Mwangi",
-    image: male2,
-    story:
-      "Growing up in Nairobi’s Kibera slum, Joseph encountered poverty, crime, and limited opportunities. KEF’s scholarship and dedicated mentors gave him structure and hope. Today, he’s a self-taught coder, a software developer building civic tech platforms, and an advocate for digital literacy among youth in underprivileged urban settlements across Kenya.",
-    achievement: "Software Developer",
-    location: "Nairobi - Kibera",
-    bgColor: [KEF_COLORS.warmth, KEF_COLORS.primary],
-  },
-  {
-    name: "Fatuma Hassan",
-    image: female2, // if you’d like, we can add female3 for better variety
-    story:
-      "From a nomadic family in Northern Kenya, Fatuma became the first girl in her community to attend high school thanks to KEF. Despite opposition, she excelled. KEF’s continued support carried her through nursing school. Today she serves as a registered nurse, inspiring other girls to pursue education and healthcare careers.",
-    achievement: "Registered Nurse",
-    location: "Northern Kenya",
-    bgColor: [KEF_COLORS.hope, KEF_COLORS.sunshine],
-  },
-  {
-  name: "Peter Otieno",
-  image: male3,
-  story:
-    "Raised in a fishing village along Lake Victoria, Peter often missed school to help support his family. KEF’s scholarship enabled him to stay in class, where he discovered a passion for environmental science. Today, he works on sustainable fishing initiatives that protect livelihoods while preserving the lake’s ecosystem.",
-  achievement: "Environmental Scientist",
-  location: "Kisumu County",
-  bgColor: [KEF_COLORS.sunshine, KEF_COLORS.primary],
-},
+  const studentStories = [
+    {
+      name: "Grace Wanjiku",
+      image:
+        "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=800&h=800&fit=crop&crop=faces&auto=format&q=60",
+      story:
+        "Growing up in a small village in Central Kenya, Grace longed to study medicine but her family could not afford school fees. KEF provided her with a scholarship, mentorship, and hope. She excelled academically, graduated top of her class, and is now pursuing medicine with the dream of serving rural communities.",
+      achievement: "Medical Student",
+      location: "Central Kenya",
+      bgColor: [KEF_COLORS.hope, KEF_COLORS.primary],
+    },
+    {
+      name: "David Kimani",
+      image: male1,
+      story:
+        "After losing both parents at a young age, David believed his dream of finishing school had ended. KEF stepped in with scholarship aid, mentorship, and emotional support. He not only completed high school but went on to university, and today works as a community officer empowering vulnerable families in Nairobi.",
+      achievement: "Community Development Officer",
+      location: "Nairobi County",
+      bgColor: [KEF_COLORS.primary, KEF_COLORS.warmth],
+    },
+    {
+      name: "Mary Chepkemoi",
+      image: female2,
+      story:
+        "As the daughter of a pastoralist family, Mary faced immense cultural pressure to abandon school. KEF offered her the chance to pursue education with dignity. Through resilience and mentorship, she graduated in engineering and now designs water systems in drought-prone regions, improving lives and inspiring young girls from her community.",
+      achievement: "Water Systems Engineer",
+      location: "Rift Valley",
+      bgColor: [KEF_COLORS.sunshine, KEF_COLORS.hope],
+    },
+    {
+      name: "Joseph Mwangi",
+      image: male2,
+      story:
+        "Growing up in Nairobi’s Kibera slum, Joseph encountered poverty, crime, and limited opportunities. KEF’s scholarship and dedicated mentors gave him structure and hope. Today, he’s a self-taught coder, a software developer building civic tech platforms, and an advocate for digital literacy among youth in underprivileged urban settlements across Kenya.",
+      achievement: "Software Developer",
+      location: "Nairobi - Kibera",
+      bgColor: [KEF_COLORS.warmth, KEF_COLORS.primary],
+    },
+    {
+      name: "Fatuma Hassan",
+      image: female2, // if you’d like, we can add female3 for better variety
+      story:
+        "From a nomadic family in Northern Kenya, Fatuma became the first girl in her community to attend high school thanks to KEF. Despite opposition, she excelled. KEF’s continued support carried her through nursing school. Today she serves as a registered nurse, inspiring other girls to pursue education and healthcare careers.",
+      achievement: "Registered Nurse",
+      location: "Northern Kenya",
+      bgColor: [KEF_COLORS.hope, KEF_COLORS.sunshine],
+    },
+    {
+      name: "Peter Otieno",
+      image: male3,
+      story:
+        "Raised in a fishing village along Lake Victoria, Peter often missed school to help support his family. KEF’s scholarship enabled him to stay in class, where he discovered a passion for environmental science. Today, he works on sustainable fishing initiatives that protect livelihoods while preserving the lake’s ecosystem.",
+      achievement: "Environmental Scientist",
+      location: "Kisumu County",
+      bgColor: [KEF_COLORS.sunshine, KEF_COLORS.primary],
+    },
 
-];
+  ];
 
 
 
@@ -687,10 +687,10 @@ const studentStories = [
               </>
             ) : (
               <>
-              <div className="text-lg">Login</div>
-              <button onClick={() => setShowLogin(true)} className="p-2 rounded-full bg-white text-blue-600 shadow hover:bg-gray-100 transition">
-                <LogIn />
-              </button></>
+                <div className="text-lg">Login</div>
+                <button onClick={() => setShowLogin(true)} className="p-2 rounded-full bg-white text-blue-600 shadow hover:bg-gray-100 transition">
+                  <LogIn />
+                </button></>
             )}
           </div>
         </div>
